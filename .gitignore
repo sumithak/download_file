@@ -1,0 +1,9 @@
+.idea
+**/_pycache__
+.pytest_cache
+.vscode
+build
+build-dir
+.coverage
+dist
+*.exe
