@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "download-file"
+version = "0.1.0"
+description = ""
+authors = ["sumitha"]
+readme = "README.md"
+packages = [{include = "download_file"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
