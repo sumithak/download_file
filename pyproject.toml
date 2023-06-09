@@ -4,13 +4,21 @@ version = "0.1.0"
 description = ""
 authors = ["sumitha"]
 readme = "README.md"
-packages = [{include = "download_file"}]
+packages = ['Makefile']
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
 requests = "^2.31.0"
 
+[tool.poetry.dev-dependencies]
+pytest = "^6.0"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+download = "download_file.download:download_file"
