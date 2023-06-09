@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["sumitha"]
 readme = "README.md"
-packages = ['Makefile']
+include = ['Makefile']
 
 [tool.poetry.dependencies]
 python = "^3.10"
