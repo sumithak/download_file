@@ -10,6 +10,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    env:
+      URL: https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+      OUTPUT_PATH: nuget.exe
 
     steps:
     - uses: actions/checkout@v3
